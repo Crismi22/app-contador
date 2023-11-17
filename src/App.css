@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body{
+  /* background-image:url(./images/ifondo.png) ;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background: #780206;  
+  background: -webkit-linear-gradient(to right, #061161, #780206); 
+  background: linear-gradient(to right, #061161, #780206); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2.Titulo {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+.Logo{
+  width: 10%;
+  height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Logo-contenedor{
+  width: 10%; 
+  height: 10%; 
+  overflow: hidden;
+  border-radius: 50%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Borde-logo {
+  width: 100%; 
+  height: auto; 
+  display: block;
+}
+
+.Footer {
+  background-color: #061161;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+  .Logo-contenedor {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .Borde-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .Titulo {
+    font-size: 1.2rem;
+  }
+  
+  .App {
+    padding-top: 10px;
+  }
+
+  .Boton {
+    margin: 10px; 
+  }
+
+  .Flex {
+    flex-direction: row; 
+  }
+
+  .Footer {
+    font-size: 0.8rem;
   }
 }
